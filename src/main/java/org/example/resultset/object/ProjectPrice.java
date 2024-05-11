@@ -1,21 +1,5 @@
-package org.example.model.resultset;
+package org.example.resultset.object;
 
 import java.math.BigDecimal;
 
-public class ProjectPrice {
-    private final long projectId;
-    private final BigDecimal price;
-
-    public ProjectPrice(long projectId, BigDecimal price) {
-        this.projectId = projectId;
-        this.price = price;
-    }
-
-    @Override
-    public String toString() {
-        return "ProjectPrice{" +
-                "projectId=" + projectId +
-                ", price=" + price +
-                '}';
-    }
-}
+public record ProjectPrice (long projectId, BigDecimal price){}

@@ -1,19 +1,3 @@
-package org.example.model.resultset;
+package org.example.resultset.object;
 
-public class MaxProjectCountClient {
-    private final String name;
-    private final long projectCount;
-
-    public MaxProjectCountClient(String name, long projectCount) {
-        this.name = name;
-        this.projectCount = projectCount;
-    }
-
-    @Override
-    public String toString() {
-        return "MaxProjectCountClient{" +
-                "name='" + name + '\'' +
-                ", projectCount=" + projectCount +
-                '}';
-    }
-}
+public record MaxProjectCountClient (String name, long projectCount ) {}
